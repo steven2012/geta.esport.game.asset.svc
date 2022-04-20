@@ -1,0 +1,12 @@
+[
+  {
+    "gameId": "ASCD_GSHSCT",
+    "name": "Puzzle",
+    "description": "GamePuzzle",
+    "url": "https://puzlle.com",
+    "providerTitleId": "such",
+    "deeplinkUri": "Uri",
+    "createdAt": "2021-03-26 18:23:23.4833333 +00:00",
+    "updatedAt": "2021-03-26 18:23:23.4833333 +00:00"
+  }
+]

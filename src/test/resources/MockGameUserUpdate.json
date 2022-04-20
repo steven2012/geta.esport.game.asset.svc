@@ -1,0 +1,19 @@
+[
+  {
+    "gameUserUpdateId": "88a0ba83-e93d-4dfb-95d6-e4e0948aa626",
+    "gameId": "0C4B4D9D-0351-45D7-87D5-F4ED377D3A40",
+    "userId": "a736ccb6-2477-4945-b805-d8141bd50b90",
+    "isUpdate": false,
+    "createdAt": "2107-06-05 00:00:00.0",
+    "updatedAt": "2107-06-05 00:00:00.0",
+    "applicationVersion": {
+      "applicationVersionId": "2C1E0D09-31E7-4573-B67C-6F3C79133317",
+      "gameId": "0C4B4D9D-0351-45D7-87D5-F4ED377D3A40",
+      "nameVersion": "puzzle_v0.0.0.40_standarda2v2_dev",
+      "createdAt": "2021-04-25 01:05:33",
+      "updatedAt": "2021-04-25 01:05:33",
+      "supportVersionAssets": [],
+      "gameUserUpdate": []
+    }
+  }
+]

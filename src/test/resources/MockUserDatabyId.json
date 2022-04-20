@@ -1,0 +1,19 @@
+{
+  "data": {
+    "userId": "a736ccb6-2477-4945-b805-d8141bd50b90",
+    "firstName": "steven",
+    "lastName": null,
+    "email": "angelabernal_1993_@hotmail.com",
+    "emailVerified": true,
+    "phoneNumber": "+573226579182",
+    "photoUrl": "https://image.shutterstock.com/image-photo/beautiful-pink-flower-anemones-fresh-260nw-1028135845.jpg",
+    "permissions": null,
+    "disabled": false,
+    "lastLoginAt": "0001-01-01T00:00:00",
+    "createdAt": "0001-01-01T00:00:00"
+  },
+  "success": true,
+  "message": "Ok",
+  "messageType": 2,
+  "statusCode": 200
+}

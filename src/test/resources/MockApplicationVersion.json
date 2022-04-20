@@ -1,0 +1,24 @@
+[
+    {
+      "applicationVersionId": "2C1E0D09-31E7-4573-B67C-6F3C79133317",
+      "gameId": "0C4B4D9D-0351-45D7-87D5-F4ED377D3A40",
+      "nameVersion": "puzzle_v0.0.0.40_standarda2v2_dev",
+      "createdAt": "2021-04-25 01:05:33",
+      "updatedAt": "2021-04-25 01:05:33",
+      "supportVersionAssets": [
+        {
+          "supportVersionAssetId": "8FA3F8CE-11C0-4F06-A346-26C8399C5BC7",
+          "gameAsset": {
+            "gameAssetId": "F297D956-2C1C-4046-9E23-AFAA7743FA5D",
+            "gameId": "0C4B4D9D-0351-45D7-87D5-F4ED377D3A40",
+            "nameAsset": "0C4B4D9D-0351-45D7-87D5-F4ED377D3A40/Assets/naruto-shippuuden-realistic-sakimichan-uchiha-itachi-wallpaper-preview.jpg",
+            "urlBlob": "https://genesysdevstorage.blob.core.windows.net/game-assets/0C4B4D9D-0351-45D7-87D5-F4ED377D3A40/Assets/naruto-shippuuden-realistic-sakimichan-uchiha-itachi-wallpaper-preview.jpg",
+            "createdAt": "2021-04-24 17:04:58.0",
+            "updatedAt": "2021-04-24 17:04:58.0"
+          },
+          "createdAt": "2021-04-25 01:05:37",
+          "updatedAt": "2021-04-25 01:05:37"
+        }
+      ]
+    }
+]

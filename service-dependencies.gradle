@@ -1,0 +1,63 @@
+ext {
+
+    SPRING_BOOT_RUNTIME = [
+           [group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'],
+           [group: 'org.springframework.boot', name: 'spring-boot-starter-web'],
+           [group: 'org.springframework', name: 'spring-context-support'],
+           [group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: springSecurityVersion],
+           [group: 'io.jsonwebtoken', name: 'jjwt', version: jsonwebtokenVersion]
+          
+    ]
+    
+    LOMBOK = [
+		[group: 'org.projectlombok', name: 'lombok', version: lombokVersion]
+	]
+	
+	JACKSON =[
+	    [group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: jackSonDataFormat],
+	    [group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: jacksonCore]
+	]
+	
+
+	AZURE=[
+	  	[group: 'com.microsoft.azure', name: 'azure-storage', version: azureStorage],
+	    //[group: 'com.azure.spring', name: 'azure-spring-boot-starter-keyvault-secrets', version: keyValueVersion],
+	  	[group: 'com.microsoft.azure', name: 'azure-keyvault-secrets-spring-boot-starter', version: azureKeyvaultSecretsVersion],
+	  	[group: 'com.azure.spring', name: 'azure-identity-spring', version: azureIdentitySpringVersion],
+	  	[group: 'com.azure', name: 'azure-identity', version: azureIdentityVersion],
+	  	[group: 'com.microsoft.azure', name: 'azure-client-authentication', version: azureClientAuthenticationVersion],
+	  	[group: 'com.microsoft.azure', name: 'azure-keyvault', version: azureKeyvaultVersion]
+	]
+	
+	MOCKING = [
+            [group: 'org.mockito', name: 'mockito-core', version: mockitoVersion],
+            [group: 'org.powermock', name: 'powermock-module-junit4', version: powerMockitoVersion],
+            //[group: 'org.mockito', name: 'mockito-all', version: mockitoall],
+            //[group: 'net.bytebuddy', name: 'byte-buddy']   
+    ]	
+    
+    MODEL_MAPPER = [
+            [group: 'org.modelmapper', name: 'modelmapper', version: modelMapperVersion]
+    ]
+	
+	JPA_PERSISTENCE = [
+		[group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa'],
+		[group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: sqlVersion]
+    ]
+	
+    LOG4J2 = [
+	    [group: 'org.apache.logging.log4j', name: 'log4j-api', version: log4jVersion],
+	    [group: 'org.apache.logging.log4j', name: 'log4j-core', version: log4jVersion]
+	]
+	
+	SPRING_BOOT_UT = [
+            [group: 'org.springframework.boot', name: 'spring-boot-starter-test']
+    ]
+    
+    SWAGGER = [
+    	   [group: 'io.springfox', name: 'springfox-swagger2', version: swaggerVersion],
+    	   [group: 'io.springfox', name: 'springfox-swagger-ui', version: swaggerVersion]
+    ]
+    
+	
+}

@@ -1,0 +1,53 @@
+
+logging:
+   level:
+      org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+      
+spring:
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate.jdbc.lob.non_contextual_creation: true
+      hibernate.jdbc.batch_size: 1000
+      hibernate.order_inserts: true
+      hibernate.generate_statistics: true 
+  datasource: 
+    db-game: 
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      hikari: 
+        maximumPoolSize: 10
+        minimumIdle: 5
+        poolName: ebusiness-jdbc-pool
+      jmx-enabled: true
+    db-game-asset: 
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      hikari: 
+        maximumPoolSize: 10
+        minimumIdle: 5
+        poolName: ebusiness-jdbc-pool
+      jmx-enabled: true     
+  servlet:
+     multipart:
+        max-file-size: 2048MB
+        max-request-size: 2048MB     
+      
+#Encryptor Value      
+seed.encryptor: "GENESYS-SPORT-GAMES_ASSETS"
+jwt.secret: GETTA_STORAGE
+storage.account.encryptor: "PO97ljuPhYvwoIrpmrr8Ajhla7xD2/7Qd8YEDtEx+Vh9+SzF5DKJ4I6gf5YZ"
+
+#host consumer 
+host.uri.user.identity: https://genesys-security-svc-dev.azurewebsites.net/Security/GetUserDataById
+host.uri.key.storage: https://genesys-storage-keystore-svc-dev.azurewebsites.net/storage/rules
+
+
+#Control limit time acces azure blobStorage(int minutes)
+limit.acces.blob.storage: 30
+
+#secretName
+game.asset.connection.string: getaclub-game-asset-svc-connection-string-sql-server
+game.core.connection.string: getaclub-core-svc-connection-strings-java-sql-server
+storage.account.key: getaclub-core-svc-connection-account-storage-key-storage
+storage.connection.string: getaclub-core-svc-connection-strings-table-storage

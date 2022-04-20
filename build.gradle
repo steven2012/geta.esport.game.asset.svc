@@ -1,0 +1,80 @@
+buildscript {
+        ext {
+             //dependencies service
+            lombokVersion = '1.18.4'
+		    springBootVersion ='2.3.3.RELEASE'
+		    jackSonDataFormat='2.10.2'
+		    jacksonCore='2.10.2'
+		    mongoDbVersion='2.3.1.RELEASE'
+		    mongoDriverVersion ='3.12.1'
+		    mockitoVersion = '3.3.3'
+		    powerMockitoVersion = '1.7.4'
+		    mockitoall= '2.0.2-beta'
+		    log4jVersion='2.11.1'
+		    swaggerVersion = '2.9.2'
+		    azureStorage='7.0.0'
+		    buddy= '1.10.20'
+		    keyValueVersion='3.0.0'
+		    sqlVersion='8.3.0.jre8-preview'
+		    modelMapperVersion = '2.3.5'
+		    springSecurityVersion='2.4.4'
+		    jsonwebtokenVersion='0.9.1'
+		    azureKeyvaultSecretsVersion='2.3.5'
+		    azureIdentitySpringVersion='1.2.0'
+		    azureIdentityVersion='1.2.3'
+		    azureClientAuthenticationVersion='1.7.5'
+		    azureKeyvaultVersion='1.2.0'
+		   
+		    // component version settings
+		    releaseNumber = '1'
+		    sprintNumber = '0'
+		}
+		
+		repositories {
+		    mavenCentral()
+		    maven {
+      		   url "https://plugins.gradle.org/m2/"
+      	    }
+      	}
+		
+		dependencies {
+		    classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		
+		}
+    }
+
+
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'java'
+
+
+apply from: 'service-dependencies.gradle'
+
+group = 'co.io.geta.platform'
+version = "${releaseNumber}.${sprintNumber}-SNAPSHOT"
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+	maven { url "https://repo.spring.io/milestone" }
+
+}
+
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+dependencies {
+	implementation SPRING_BOOT_RUNTIME,LOMBOK,JACKSON,LOG4J2,SWAGGER,AZURE,JPA_PERSISTENCE,MODEL_MAPPER
+	testImplementation LOMBOK,SPRING_BOOT_UT,MOCKING
+	
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testAnnotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.projectlombok:lombok'
+	testRuntimeOnly 'org.junit.platform:junit-platform-commons:1.7.0'
+   }

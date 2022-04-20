@@ -1,0 +1,19 @@
+{
+  "data": {
+    "KeyRules": {
+      "Details": {
+        "Puzzle": {
+          "User": "Puzzle",
+          "Password": "$2a$10$BdglZM1ligzByiXjmW8CX.rnzLtYjWvIquCiKeelpqkg4lzIXgfLa"
+        },
+        "Racing": {
+          "User": "Racing",
+          "Password": "$2a$10$njPqN.7L9noMIn1LMm.5D.NaWk2n3uaDXquTPQ1tZoXiskvvV8hhq"
+        }
+      }
+    }
+  },
+  "success": true,
+  "message": "",
+  "statusCode": 200
+}

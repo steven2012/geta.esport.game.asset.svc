@@ -1,0 +1,9 @@
+{
+  "data": {
+    "urlToken": "https://genesysdevstorage.blob.core.windows.net/game-assets/0C4B4D9D-0351-45D7-87D5-F4ED377D3A40/Assets/Puzzle?sv=2018-03-28&sr=b&sig=nSJ0j6AUCn1aESFcU5sWg1vrIGKWuv%2F43Ze0fnpOMYo%3D&st=2021-04-26T00%3A53%3A53Z&se=2021-04-26T01%3A08%3A53Z&sp=rw"
+  },
+  "success": true,
+  "message": null,
+  "messageType": null,
+  "statusCode": 200
+}
